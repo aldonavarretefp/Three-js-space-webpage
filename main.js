@@ -32,7 +32,7 @@ const torus = new THREE.Mesh(geometry, material);
 scene.add(torus);
 
 //planet
-const planetTexture = new THREE.TextureLoader().load('sea-texture.jpeg')
+const planetTexture = new THREE.TextureLoader().load('./img/sea-texture.jpeg')
 
 const planet = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
@@ -78,7 +78,7 @@ function addStar(){
 Array(200).fill().forEach(addStar)
 
 //Space background
-const spaceTexture = new THREE.TextureLoader().load('space.jpeg');
+const spaceTexture = new THREE.TextureLoader().load('./img/space.jpeg');
 scene.background = spaceTexture
 
 function moveCamera(){
